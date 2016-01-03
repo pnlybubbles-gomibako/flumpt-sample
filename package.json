@@ -1,0 +1,24 @@
+{
+  "name": "flumpt-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify -v -d index.babel.js -t [ babelify --presets [ es2015 react ] ] -o 'exorcist index.js.map > index.js'"
+  },
+  "author": "pnlybubbles",
+  "license": "MIT",
+  "dependencies": {
+    "flumpt": "^0.1.4",
+    "react": "^0.14.5",
+    "react-dom": "^0.14.5"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babelify": "^7.2.0",
+    "exorcist": "^0.4.0",
+    "watchify": "^3.6.1"
+  }
+}
